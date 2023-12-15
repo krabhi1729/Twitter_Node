@@ -31,12 +31,13 @@ app.listen(3000, async () => {
    */
 
   // const tweet=await tweetRepo.update('657b24555533617c58f5517a',{content:'latest tweet'})
-  // const tweet = await tweetRepo.create({ content:'tweet with a comment schema'});
+  const tweet = await tweetRepo.create({ content:'with hooks'});
   // const comment=await Comment.create({content:'new comment added'})
-  // console.log(tweet);
+  console.log(tweet);
   // tweet.comments.push(comment);
   // await tweet.save();
 
-  const tweet = await tweetRepo.getAll(0, 4);
-  console.log(tweet[0].contentWithEmail);
+/** const tweet = await tweetRepo.getAll(0, 4);
+  console.log(tweet[0].contentWithEmail); */
+ 
 });
